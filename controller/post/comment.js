@@ -11,7 +11,7 @@ export const comment = async (req, res) => {
     user: user._id,
   });
 
-  const post = await postModel.findById({post._id : postId});
+  const post = await postModel.findById({ post_id: postId });
 
   const postcomment = await postModel
     .findByIdAndUpdate(postId, {
