@@ -5,7 +5,6 @@ const postSchema = new mongoose.Schema({
   caption: { type: String, required: true },
   likes: [{ type: String, required: false }],
   postImages: { type: [{ type: String, required: true }], required: true },
-  comment: { type: String, required: false, ref: "postComment" },
   createrdAt: { type: Date, default: Date.now() },
   updatedAt: { type: Date, default: Date.now() },
 });
