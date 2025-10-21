@@ -14,7 +14,7 @@ export const login = async (request, response) => {
           data: user,
         },
         process.env.JWT_SECRET,
-        { expiresIn: "1h" }
+        { expiresIn: "3h" }
       );
       response.json(accessToken);
     } else {

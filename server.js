@@ -14,7 +14,6 @@ app.use(express.json());
 app.use(cors());
 app.use("/", userRouter);
 app.use("/post", postRouter);
-
 app.use("/comment", commentRouter);
 
 const connectToDb = async () => {

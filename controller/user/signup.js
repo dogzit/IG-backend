@@ -22,7 +22,7 @@ export const signUp = async (request, response) => {
         data: res,
       },
       process.env.JWT_SECRET,
-      { expiresIn: "1h" }
+      { expiresIn: "3h" }
     );
     response.json(accessToken);
   }
