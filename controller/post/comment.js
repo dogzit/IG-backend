@@ -5,7 +5,6 @@ export const comment = async (req, res) => {
   const user = req.user;
   const { comment } = req.body;
   const { postId } = req.params;
-  console.log(comment, "ats");
   const comments = await commentModel.create({
     commentImages: comment,
     user: user._id,
